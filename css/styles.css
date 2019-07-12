@@ -37,21 +37,26 @@ a:active {
 
 /* Body and Headers */
 body {
-    padding-top: 50px;
+    padding-top: 65px;
     font-family: Segoe UI;
     color: #24292e;
-    font-size: 20px;
+    font-size: 25px;
     /* background-image: url(../images/background.png);              ######################################## PERHAPS? ######################################## */
-}
-
-h1 {
-    font-size: 35px;
-}
-
-h2 {
-    font-size: 25px
 }
 
 .centered {
     text-align: center;
+}
+
+.url {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.url:hover {
+    text-decoration: underline;
+}
+
+.biggertext {
+    font-size: 115%;
 }
