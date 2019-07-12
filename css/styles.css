@@ -1,5 +1,57 @@
+/* Navbar */
+
+nav ul {
+    color: whitesmoke;
+    background-color: #24292e;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a {
+    float: left;
+    /* display: block; */
+    color: #333333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+a:active {
+    transform: translateY(1px);
+}
+
+/* Body and Headers */
 body {
+    padding-top: 50px;
     font-family: Segoe UI;
     color: #24292e;
     font-size: 20px;
+    /* background-image: url(../images/background.png);              ######################################## PERHAPS? ######################################## */
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px
+}
+
+.centered {
+    text-align: center;
 }
