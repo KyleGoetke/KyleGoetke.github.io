@@ -40,10 +40,10 @@ a:active {
 footer {
     position: fixed;
     left: 0;
-    bottom: 1%;
+    bottom: 2%;
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 
