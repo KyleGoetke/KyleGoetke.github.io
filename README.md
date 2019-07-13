@@ -1,2 +1,2 @@
-# My personal website and ePortfolio
+# My personal website / ePortfolio
 Hosted on Github Pages
