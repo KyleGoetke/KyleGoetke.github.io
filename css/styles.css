@@ -29,7 +29,7 @@ body {
 /* Navbar */
 
 nav ul {
-    color: white;
+    color: #ffffff;
     background-color: #24292e;
     top: 0;
     width: 100%;
@@ -120,7 +120,9 @@ hr {
 }
 
 /*
-
-Resume orange: #f2511b
-
+Color Scheme
+White:  #ffffff
+Black:  #24292e
+Orange: #f2511b
+Blue:   #0366d6
 */
