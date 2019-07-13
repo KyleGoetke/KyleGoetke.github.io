@@ -8,7 +8,6 @@ body {
     Apple Color Emoji,
     Segoe UI Emoji,
     Segoe UI Symbol;
-    ;
     color: #24292e;
     font-size: 25px;
     /* background-image: url(../images/background.png);              ############################ PERHAPS? ############################ */
@@ -26,7 +25,7 @@ body {
 }
 
 
-/* Navbar */
+/* Navbar and Footer */
 
 nav ul {
     color: #ffffff;
@@ -62,9 +61,6 @@ nav a {
 a:active {
     transform: translateY(1px);
 }
-
-
-/* Footer */
 
 footer {
     position: relative;
