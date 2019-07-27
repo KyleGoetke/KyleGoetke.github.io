@@ -1,13 +1,13 @@
 body {
     font-family: -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    sans-serif,
-    Helvetica,
-    Arial,
-    Apple Color Emoji,
-    Segoe UI Emoji,
-    Segoe UI Symbol;
+        BlinkMacSystemFont,
+        Segoe UI,
+        sans-serif,
+        Helvetica,
+        Arial,
+        Apple Color Emoji,
+        Segoe UI Emoji,
+        Segoe UI Symbol;
     color: #24292e;
     font-size: 25px;
     /* background-image: url(../images/background.png);              ############################ PERHAPS? ############################ */
@@ -24,9 +24,7 @@ body {
     font-size: 20px;
 }
 
-
 /* Navbar and Footer */
-
 nav ul {
     background-color: #24292e;
     top: 0;
@@ -61,19 +59,17 @@ footer {
     position: relative;
     height: 40px;
     margin-top: -40px;
-    line-height:40px;
-    width:100%;
+    line-height: 40px;
+    width: 100%;
     clear: both;
     text-align: center;
     font-size: 18px;
     color: #ffffff;
     background-color: #24292e;
-    text-align:center;
+    text-align: center;
 }
 
-
 /* The Rest */
-
 #container {
     min-height: 100%
 }
