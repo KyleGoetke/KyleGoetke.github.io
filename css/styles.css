@@ -105,6 +105,12 @@ hr {
     align-self: center;
 }
 
+.largetext {
+	font-size: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 /*
 Color Scheme
 White:  #ffffff
