@@ -111,10 +111,33 @@ hr {
 	margin-right: 15%;
 }
 
+.title {
+	font-size: 30px;
+}
+
+/* row container */
+.row {
+	align-content: center;
+}
+
+/* Column containers */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after column containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*
 Color Scheme
-White:  #ffffff
-Black:  #24292e
-Orange: #f2511b
-Blue:   #0366d6
+	White:  #ffffff
+	Black:  #24292e
+	Orange: #f2511b
+	Blue:   #0366d6
 */
