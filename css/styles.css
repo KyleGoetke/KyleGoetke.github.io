@@ -50,8 +50,8 @@ nav a {
     font-size: 20px;
 }
 
-a:active {
-    transform: translateY(1px);
+nav a:hover {
+	text-decoration: none;
 }
 
 footer {
@@ -69,6 +69,20 @@ footer {
 }
 
 /* The Rest */
+
+a:active {
+    transform: translateY(1px);
+}
+
+a {
+	color: #24292e;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 #container {
     min-height: 100%
 }
@@ -117,18 +131,20 @@ hr {
 
 /* row container */
 .row {
-	align-self: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 /* 3 column containers */
 .threecolumn {
   float: left;
-  width: 33.33%;
+  width: 25%;
   padding: 5px;
 }
 
 .threecolumn img {
-	width: 50%;
+	width: 100%;
 }
 
 /* 2 column containers */
