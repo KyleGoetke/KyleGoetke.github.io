@@ -127,6 +127,7 @@ hr {
 
 .title {
 	font-size: 30px;
+	padding-bottom: 15px;
 }
 
 /* row container */
@@ -163,6 +164,16 @@ hr {
   content: "";
   clear: both;
   display: table;
+}
+
+.headerimage {
+	width: 50%;
+}
+
+
+#lefttext {
+	margin-right: 0;
+	margin-left: 10%;
 }
 
 /*
