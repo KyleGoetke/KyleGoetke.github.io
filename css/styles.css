@@ -111,6 +111,10 @@ hr {
     align-self: center;
 }
 
+h1 {
+    font-size: 45px;
+}
+
 .largetext {
 	font-size: 30px;
 	margin-left: 15%;
