@@ -2,4 +2,4 @@
 
 Hosted on Github Pages
 
-Copyright © Kyle Goetke // October 2019
+Copyright © 2019 Kyle Goetke
