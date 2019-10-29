@@ -46,6 +46,12 @@ nav a:hover {
 	text-decoration: none;
 }
 
+nav img {
+    height: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 footer {
     position: relative;
     height: 40px;
