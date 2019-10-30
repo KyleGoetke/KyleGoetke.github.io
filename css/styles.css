@@ -87,7 +87,10 @@ a:hover {
 
 #main {
     overflow: auto;
-    padding-block: 100px;
+}
+
+iframe {
+    border: none;
 }
 
 .centered {
@@ -185,6 +188,12 @@ h1 {
     width: 40%;
 	margin-right: 5%;
 	margin-left: 0;
+}
+
+iframe {
+    visbility: hidden;
+    top: 0;
+    left: 0;
 }
 
 /*
