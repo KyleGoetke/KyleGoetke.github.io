@@ -142,6 +142,17 @@ h1 {
 	justify-content: center;
 }
 
+/* 4 column containers */
+.fourcolumn {
+  float: left;
+  width: 25%;
+}
+
+.fourcolumn img {
+	width: 80%;
+    padding-bottom: 15%;
+}
+
 /* 3 column containers */
 .threecolumn {
   float: left;
