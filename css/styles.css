@@ -24,6 +24,7 @@ nav ul {
     padding: 0;
     position: fixed;
     list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav li {
