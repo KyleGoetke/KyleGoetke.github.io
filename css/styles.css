@@ -185,13 +185,13 @@ h1 {
 	width: 50%;
 }
 
-#lefttext {
+.lefttext {
     width: 40%;
 	margin-right: 0;
 	margin-left: 5%;
 }
 
-#righttext {
+.righttext {
     width: 40%;
 	margin-right: 5%;
 	margin-left: 0;
