@@ -184,6 +184,10 @@ h1 {
     width: 85%;
 }
 
+.bullet {
+    font-size: 50%;
+}
+
 /* Clear floats after column containers */
 .row::after {
     content: "";
