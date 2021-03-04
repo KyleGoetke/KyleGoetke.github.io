@@ -1,5 +1,3 @@
-# My personal website and digital portfolio
+# Kyle Goetke
 
-Hosted on Github Pages
-
-Copyright © 2021 Kyle Goetke
+_Please visit at KyleGoetke.github.io_
