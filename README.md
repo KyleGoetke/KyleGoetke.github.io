@@ -1,3 +1,3 @@
 # Kyle Goetke
 
-*Please visit at [KyleGoetke.github.io](KyleGoetke.github.io)*
+*You can view it [here](KyleGoetke.github.io)*
