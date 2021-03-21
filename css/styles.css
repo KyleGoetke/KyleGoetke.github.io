@@ -56,10 +56,6 @@ a {
     text-decoration: none;
 }
 
-main a {
-    font-style: italic;
-}
-
 a:hover {
     text-decoration: underline;
 }
