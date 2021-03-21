@@ -1,224 +1,94 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #24292e;
-    font-size: 25px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-/* Navbar and Footer */
-nav ul {
-    background-color: #24292e;
-    top: 0;
-    width: 100%;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    list-style-type: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav li {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-nav a {
-    color: #ffffff;
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    height: 36px;
-    line-height: 36px;
+    background-color: #f5f5f5;
+    color: #1c1c1c;
     font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
-nav a:hover {
-    text-decoration: none;
+nav {
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 64px;
+    position: fixed;
 }
 
-nav img {
-    height: 100%;
-    margin-left: 0;
-    padding-left: 0;
+nav .logo {
+    position: absolute;
+    top: 22px;
+    left: 20px;
 }
 
-footer {
-    position: relative;
-    height: 40px;
-    margin-top: -40px;
-    line-height: 40px;
-    width: 100%;
-    clear: both;
-    text-align: center;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #24292e;
-    text-align: center;
+nav p {
+    margin: 0 20px 0 0;
+    text-align: right;
+    line-height: 64px;
 }
 
-/* The Rest */
+nav p a {
+    display: inline-block;
+    min-width: 2rem;
+}
 
-a:active {
-    transform: translateY(1px);
+nav a.active {
+    color: #2A7DDC;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 65px;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1rem auto;
+    max-width: 80ch;
+    font-size: larger;
+}
+
+hr {
+    border-top: thin solid #1c1c1c;
 }
 
 a {
-    color: #0366d6;
+    color: inherit;
     text-decoration: none;
+}
+
+main a {
+    font-style: italic;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-#container {
-    min-height: 100%
-}
-
-#main {
-    overflow: auto;
-}
-
-iframe {
-    border: none;
-}
-
-.centered {
-    text-align: center;
-}
-
-.url,
-.url:visited {
-    color: #0366d6;
+#pclink:hover {
     text-decoration: none;
 }
 
-.url:hover {
-    text-decoration: underline;
+#left-td {
+    width: 71%;
 }
 
-.biggertext {
-    font-size: 115%;
+#right-td {
+    width: 400px;
+    text-align: right;
 }
 
-hr {
-    width: 85%;
-    margin: 0 7.5% 0 7.5%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border: 1px #24292e solid;
-    align-self: center;
+.image-crop {
+    width: 275px;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
-h1 {
-    font-size: 45px;
-}
-
-.largetext {
-    font-size: 35px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.title {
-    font-size: 40px;
-    padding-bottom: 15px;
-}
-
-/* row container */
-.row {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-/* 4 column containers */
-.fourcolumn {
-    float: left;
-    width: 25%;
-}
-
-.fourcolumn img {
-    width: 80%;
-    padding-bottom: 15%;
-}
-
-/* 3 column containers */
-.threecolumn {
-    float: left;
-    width: 25%;
-    padding: 5px;
-}
-
-.threecolumn img {
-    width: 100%;
-}
-
-/* 2 column containers */
-.twocolumn {
-    float: left;
-    width: 50%;
-}
-
-.twocolumn img {
-    width: 80%;
-}
-
-#lefttext p {
+#pfp {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
     float: right;
-    width: 85%;
 }
-
-#righttext p {
-    float: left;
-    width: 85%;
-}
-
-.bullet {
-    font-size: 50%;
-}
-
-/* Clear floats after column containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.headerimage {
-    width: 50%;
-}
-
-.lefttext {
-    width: 40%;
-    margin-right: 0;
-    margin-left: 5%;
-}
-
-.righttext {
-    width: 40%;
-    margin-right: 5%;
-    margin-left: 0;
-}
-
-iframe {
-    top: 0;
-    left: 0;
-}
-
-/*
-Color Scheme
-	White:  #ffffff
-	Black:  #24292e
-	Blue:   #0366d6
-*/
