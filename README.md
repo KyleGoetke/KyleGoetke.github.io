@@ -1,3 +1,7 @@
-# Kyle Goetke
+# KyleGoetke.github.io
 
-_Please visit at [KyleGoetke.github.io](http://KyleGoetke.github.io)_
+A simple personal website.
+
+## To-Do list
+- [ ] Fix spacing when jumping sections
+- [ ] New section
