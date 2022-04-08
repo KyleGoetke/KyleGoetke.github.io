@@ -4,26 +4,46 @@
 <head>
     <title>Kyle Goetke</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav>
-        <table>
-            <td class="nav-left"><a href="/">Kyle Goetke</a></td>
-            <td class="nav-right">
-                <a href="#resume">Resume</a> // <a href="#idk-man">idk man</a>
+    <script>
+        function removehash() {
+            setTimeout(function() {
+                history.replaceState("", document.title, window.location.pathname);
+            }, 1);
+        }
+    </script>
+    <table id="maintable">
+        <!-- maintd  -->
+        <tr id="about">
+            <td id="navtd">
+                <nav class="centered">
+                    <h3>Kyle Goetke</h3>
+                    <div id="image-crop">
+                        <img id="pfp" src="images/pfp.jpeg" alt="Headshot Photo">
+                    </div>
+                    <a onclick="removehash()" href="index.html#about">ABOUT</a><br>
+                    <a onclick="removehash()" href="index.html#education">EDUCATION</a><br>
+                    <a onclick="removehash()" href="index.html#experience">EXPERIENCE</a><br>
+                    <a onclick="removehash()" href="index.html#projects">TECHNICAL PROJECTS</a><br>
+                    <a onclick="removehash()" href="index.html#volunteer">VOLUNTEER WORK</a><br>
+                    <a onclick="removehash()" href="index.html#honors">HONORS & AWARDS</a><br>
+                </nav>
             </td>
-        </table>
-    </nav>
-    <div id="main-404">
-        <div class="centered">
-            <h1>404</h1>
-            <p class="aftertitle">Nothing here, sorry.</p>
-        </div>
-        <hr>
-    </div>
+            <td id="maintd">
+                <div id="main">
+                    <div>
+                        <h1>404</h1>
+                        <p id="about-me">Whoops! There's nothing here.</p>
+                        <hr>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>

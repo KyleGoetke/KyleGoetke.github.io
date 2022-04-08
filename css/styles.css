@@ -2,163 +2,67 @@
 
 html {
     color: #1c1c1c;
-    font-size: 22px;
+    font-size: 18px;
     font-family: "Jost", Arial, sans-serif;
-    letter-spacing: .03em;
+    letter-spacing: .04em;
     scroll-behavior: smooth;
     min-height: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
 }
 
 * {
     box-sizing: border-box
 }
 
-body {
-    background: #ededed;
-    background-image: url("images/background.png");
-    background-image: url("https://background-tiles.com/overview/blue/patterns/small/1063.png");
-}
-
-/*
-nav {
-    top: 5px;
-    right: 0;
-    left: 0;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    z-index: 5;
-    color: #f5f5f5;
-    font-size: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(75vw - 100px);
-    max-width: 1170px;
-    position: fixed;
-}
-
-#navback {
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 11%;
-    position: fixed;
-    z-index: 3;
-    background-color: #1c1c1c;
-}
-
-margin-left: auto;
-margin-right: auto;
-width: calc(75vw - 100px);
-max-width: 1170px;
-*/
-
-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 11%;
-    padding: 15px;
-    color: #f5f5f5;
-    background-color: #1c1c1c;
-    line-height: 100%;
-    z-index: 1;
-    /* border-bottom: 3px solid #ededed; */
-}
-
-nav a {
-    color: inherit;
-}
-
-nav table {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-}
-
-.nav-left {
-    width: 50%;
-    text-align: left;
-    height: 100%;
-}
-
-.nav-right {
-    width: 50%;
-    text-align: right;
-    height: 100%;
-}
-
-nav tr {
-    height: auto;
-}
-
-nav td {
-    height: 100%;
-}
-
-#main {
-    margin: 2em auto;
-    margin-top: 8%;
-    line-height: 1.4;
-    text-align: justify;
-    background: #f5f5f5;
-    padding: 100px;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    width: calc(100vw - 50px);
-    max-width: 1170px;
-}
-
-#main-404 {
-    margin: 2em auto;
-    margin-top: 8%;
-    line-height: 1.4;
-    text-align: justify;
-    background: #f5f5f5;
-    padding: 100px;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    width: calc(100vw - 50px);
-    max-width: 1170px;
-    height: 75vh;
-}
-
-h1 {
-    font-size: 42px;
-}
-
-h2 {
-    font-size: 32px;
-    padding-top: 1.5em;
-}
-
-.list-after {
-    margin-top: 0.3em;
-}
-
-a {
-    color: #00a2e7;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .centered {
     text-align: center;
 }
 
-hr {
-    border-top: 2px solid #1c1c1c;
+#maintable {
+    top: 0;
+    left: 0;
 }
 
-#about-me {
-    padding-top: 20px;
+#maintable,
+#maintable tr td {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    border-collapse: collapse;
+    float: left;
+    table-layout: fixed;
+}
+
+#navtd {
+    width: 270px;
+    height: 100vw;
+    background-color: #4788cf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* maintd */
+#about {
+    width: calc(100vw - 290px);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav {
+    text-align: center;
+    vertical-align: text-top;
+    color: #f5f5f5;
+    line-height: 2.5em;
+    width: 90%;
+    margin: 5%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    line-height: 2.5em;
 }
 
 #links {
@@ -172,9 +76,76 @@ hr {
     width: 50%;
 }
 
-.aftertitle {
-    margin-top: -0.75em;
-    margin-bottom: 2em;
+#gh-link,
+#linkedin-link {
+    height: 64px;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    height: 80%;
+    width: 73vw;
+    text-align: left;
+    vertical-align: text-top;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    /*! 4vw = 5% */
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 64px;
+}
+
+/* #aftername {
+    margin-top: 0px;
+    font-size: 24px;
+    font-size: 30px;
+    margin-bottom: 40px;
+} */
+
+#about-me {
+    font-size: larger;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bluetext {
+    color: #4788cf;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 5vh;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+hr {
+    border-top: 2px solid #1c1c1c;
+    margin-top: 4%;
 }
 
 .resume-table {
@@ -189,49 +160,71 @@ hr {
 }
 
 .resume-left {
-    width: 65%;
+    width: 70%;
 }
 
 .resume-right {
-    width: 35%;
+    width: 30%;
     vertical-align: top;
     text-align: right;
 }
 
-#gh-link {
-    height: 64px;
+.resume-bullets {
+    width: 70vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2) + 24vw);
 }
 
-#linkedin-link {
-    height: 64px;
+.resume-bullets ul {
+    margin-top: 1vh;
 }
 
-.spacer {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-    background: #1c1c1c;
-    width: calc(100vw - 50px);
-    max-width: 1170px;
-    position: relative;
-    left: -100px;
+#image-crop {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0.5vw solid #96BAE0;
+    margin: 5% auto;
 }
 
-.spacer img {
-    height: 50px;
+#pfp {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    float: center;
 }
+
+#about,
+#education,
+#experience,
+#projects,
+#volunteer,
+#honors {
+    margin-top: 3vh;
+}
+
 
 /*
-background   #ededed
-body         #f5f5f5
-text         #1c1c1c
-link/favicon #0366d6
-old link     #00a2e7
-linkedin     #0a66c2
-visited      #d24637
-emphasis     #48bf84
-jeff gold    #e2b000
-jeff red     #fb5c43
-jeff green   #75b391
-jeff purple  #9e8da7
+text       #1c1c1c
+background #f5f5f5
+nav        #4788cf
+link       #0366d6
+*/
+
+
+
+/* OLD STUFF
+background    #ededed
+body          #f5f5f5
+text          #1c1c1c
+link/favicon  #0366d6
+old link      #00a2e7
+resume header #4285f4
+linkedin      #0a66c2
+visited       #d24637
+emphasis      #48bf84
+jeff gold     #e2b000
+jeff red      #fb5c43
+jeff green    #75b391
+jeff purple   #9e8da7
 */

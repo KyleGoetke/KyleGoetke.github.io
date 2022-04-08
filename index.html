@@ -4,149 +4,227 @@
 <head>
     <title>Kyle Goetke</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav>
-        <table>
-            <td class="nav-left"><a href="#">Kyle Goetke</a></td>
-            <td class="nav-right">
-                <a href="#resume">Resume</a> // <a href="#idk-man">WIP</a>
+    <script>
+        function removehash() {
+            setTimeout(function() {
+                history.replaceState("", document.title, window.location.pathname);
+            }, 1);
+        }
+    </script>
+    <table id="maintable">
+        <!-- maintd  -->
+        <tr id="about">
+            <td id="navtd">
+                <nav class="centered">
+                    <h3>Kyle Goetke</h3>
+                    <div id="image-crop">
+                        <img id="pfp" src="images/pfp.jpeg" alt="Headshot Photo">
+                    </div>
+                    <a onclick="removehash()" href="#about">ABOUT</a><br>
+                    <a onclick="removehash()" href="#education">EDUCATION</a><br>
+                    <a onclick="removehash()" href="#experience">EXPERIENCE</a><br>
+                    <a onclick="removehash()" href="#projects">TECHNICAL PROJECTS</a><br>
+                    <a onclick="removehash()" href="#volunteer">VOLUNTEER WORK</a><br>
+                    <a onclick="removehash()" href="#honors">HONORS & AWARDS</a><br>
+                </nav>
             </td>
-        </table>
-    </nav>
-    <div id="main">
-        <div class="centered">
-            <h1>Hi, I'm Kyle.</h1>
-            <p class="aftertitle">How's it going?</p>
-        </div>
-        <hr>
-        <div id="about-me">
-            <p>
-                I'm a student, a musician, a computer hardware enthusiast, and a heavy sleeper. I got my first
-                computer when I was twelve years old and fell in love with technology. Since then I've
-                accumulated knowledge and hands&ndash;on experience in a range of technical roles. I attend Drexel
-                University, where I'm studying Computing and Security Technology. I enjoy playing the drums,
-                assembling computers, exploring Philadelphia, and rolling d20s.
-                <table id="links">
-                    <tr>
-                        <td class="centered">
-                            <div>
-                                <a href="https://github.com/kylegoetke/" target="_blank" rel="noopener noreferrer"><img id="gh-link" src="images/github-dark.svg" onmouseover="this.src='images/github-blue.svg';" onmouseout="this.src='images/github-dark.svg';" /></a>
-                            </div>
-                        </td>
-                        <td class="centered">
-                            <a href="https://www.linkedin.com/in/kyle-goetke" target="_blank" rel="noopener noreferrer"><img id="linkedin-link" src="images/linkedin-dark.svg" onmouseover="this.src='images/linkedin-blue.svg';" onmouseout="this.src='images/linkedin-dark.svg';" /></a>
-                            <br>
-                        </td>
-                    </tr>
-                </table>
-            </p>
-        </div>
-        <div class="spacer">
-            <img src="images/code.svg">
-        </div>
-        <div id="resume">
-            <p>
-                <h2 class="centered">A Resume Of Sorts</h2>
-                <hr>
-                <h3 class="centered">Education</h3>
-                <table class="resume-table">
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Computing and Security Technology</strong> | Drexel University<br>
-                            <em>Philadelphia, PA</em>
-                        </td>
-                        <td class="resume-right">
-                            Expected Graduation &ndash; June 2025
-                        </td>
-                    </tr>
-                </table>
-                <h3 class="centered">Work Experience</h3>
-                <table class="resume-table">
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Associate DevOps Engineer</strong> | Health Union<br>
-                            <em>Philadelphia, PA</em>
-                        </td>
-                        <td class="resume-right">
-                            September 2021 &ndash; Present
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="resume-left">
-                            <strong>IT Intern</strong> | Union County Vocational-Technical Schools<br>
-                            <em>Scotch Plains, NJ</em>
-                        </td>
-                        <td class="resume-right">
-                            June 2019 &ndash; June 2021
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Technology Assistant</strong> | New Providence School District<br>
-                            <em>New Providence, NJ</em>
-                        </td>
-                        <td class="resume-right">
-                            June 2016 &ndash; September 2018
-                        </td>
-                    </tr>
-                </table>
-                <h3 class="centered">Volunteer Work</h3>
-                <table class="resume-table">
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Volunteer</strong> | Appalachia Service Project<br>
-                            <em>Logan, WV</em>
-                        </td>
-                        <td class="resume-right">
-                            July 2019
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Volunteer</strong> | Appalachia Service Project<br>
-                            <em>Bland County, VA</em>
-                        </td>
-                        <td class="resume-right">
-                            July 2017
-                        </td>
-                    </tr>
-                </table>
-                <h3 class="centered">Awards and Honors</h3>
-                <table class="resume-table">
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Dean's List</strong> | Drexel University<br>
-                        </td>
-                        <td class="resume-right">
-                            All terms, 2020 &ndash; Present
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="resume-left">
-                            <strong>Eagle Scout</strong> | BSA Troop 63 &ndash; New Providence<br>
-                        </td>
-                        <td class="resume-right">
-                            Nov 2019
-                        </td>
-                    </tr>
-                </table>
-            </p>
-        </div>
-        <div class="spacer">
-            <img src="images/code.svg">
-        </div>
-        <div id="idk-man">
-            <h2 class="centered">Hello</h2>
-            <hr>
-            <div class="centered">
-                I would appreciate ideas for other sections :)
-            </div>
-        </div>
-    </div>
+            <td id="maintd">
+                <div id="main">
+                    <div>
+                        <h1>Hello, I'm Kyle</h1>
+                        <!-- <p id="aftername">How's it going?</p> -->
+                        <p id="about-me">I'm a student, a musician, a computer hardware enthusiast, and a heavy sleeper. I got my first computer when I was twelve years old and fell in love with technology. Since then I've accumulated knowledge and hands–on experience in a range of technical roles. I attend Drexel University, where I'm studying Computing and Security Technology. I enjoy playing the drums, assembling computers, exploring Philadelphia, and rolling d20s.</p>
+                        <table id="links">
+                            <tr>
+                                <td class="centered">
+                                    <div>
+                                        <a href="https://github.com/kylegoetke/" target="_blank" rel="noopener noreferrer"><img id="gh-link" src="images/github-dark.svg" onmouseover="this.src='images/github-blue.svg';" onmouseout="this.src='images/github-dark.svg';" /></a>
+                                    </div>
+                                </td>
+                                <td class="centered">
+                                    <a href="https://www.linkedin.com/in/kyle-goetke" target="_blank" rel="noopener noreferrer"><img id="linkedin-link" src="images/linkedin-dark.svg" onmouseover="this.src='images/linkedin-blue.svg';" onmouseout="this.src='images/linkedin-dark.svg';" /></a>
+                                    <br>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </div>
+                    <div id="education">
+                        <h2 class="centered">Education</h2>
+                        <table class="resume-table">
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>B.S. Computing and Security Technology</strong> | Drexel University<br>
+                                    <em>Philadelphia, PA</em>
+                                    <!-- <div class="resume-bullets">
+                                        <ul>
+                                            <li>Coursework?</li>
+                                            <li>Clubs?</li>
+                                            <li>Etc?</li>
+                                        </ul>
+                                    </div> -->
+                                </td>
+                                <td class="resume-right">
+                                    Expected Graduation: 2025<br>
+                                    Cumulative GPA: 3.90
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                    <div id="experience">
+                        <h2 class="centered">Experience</h2>
+                        <table class="resume-table">
+                            <!-- <tr>
+                                <td class="resume-left">
+                                    <strong>Student Assistant</strong> | Drexel CCI Commons<br>
+                                    <em>Philadelphia, PA</em>
+                                </td>
+                                <td class="resume-right">
+                                    March 2022 &ndash; Present
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Associate DevOps Engineer</strong> | Health Union<br>
+                                    <em>Philadelphia, PA</em>
+                                    <div class="resume-bullets">
+                                        <ul>
+                                            <li>Utilized Amazon Web Services and Docker to construct a CI/CD service and automate IaC deploys</li>
+                                            <li>Adhered to Agile Scrum development practices to guide development and task completion</li>
+                                            <li>Created a comprehensive reference guide designed for employee use company&dash;wide</li>
+
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    September 2021 &ndash; March 2022
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>IT Intern</strong> | Union County Vocational&dash;Technical Schools<br>
+                                    <em>Scotch Plains, NJ</em>
+                                    <div class="resume-bullets">
+                                        <ul>
+                                            <li>Resolved issues across a campus-wide network including hardware repair and software configuration</li>
+                                            <li>Facilitated software delivery through remote and physical systems</li>
+                                            <li>Trained eight new interns to succeed in the following year</li>
+                                            <li>Collaborated with faculty to find solutions for issues with productivity and connectivity</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    June 2019 &ndash; June 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Technology Assistant</strong> | New Providence School District<br>
+                                    <em>New Providence, NJ</em>
+                                    <div class="resume-bullets">
+                                        <ul>
+                                            <li>Responsible for organizing and installing new hardware and software</li>
+                                            <li>Cooperated with team members to integrate new and existing technology systems</li>
+                                            <li>Assisted faculty and staff with resolving technology issues</li>
+
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    June 2016 &ndash; September 2018
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                    <div id="projects">
+                        <h2 class="centered">Technical Projects</h2>
+                        <table class="resume-table">
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Developer</strong> | Platform Panic<br>
+                                    <em>Term Project, Remote</em>
+                                    <div class="resume-bullets">
+                                        <ul>
+                                            <li>Developed a game inspired by classic platformers using HTML, CSS, and JavaScript</li>
+                                            <li>Utilized Agile development practices to manage group workflow</li>
+                                            <li>Collaborated, committed changes, and coordinated work using Git</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    January 2021 &ndash; June 2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="resume-left">
+                                    Custom&dash;Built Desktop Computers<br>
+                                    <div class="resume-bullets">
+                                        <ul>
+                                            <li>Researched and identified compatible hardware components</li>
+                                            <li>Assembled and actively maintain computer hardware</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    June 2015 &ndash; Present
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                    <div id="volunteer">
+                        <h2 class="centered">Volunteer Work</h2>
+                        <table class="resume-table">
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Volunteer</strong> | Appalachia Service Project<br>
+                                    <em>Virginia & West Virginia</em>
+                                    <div>
+                                        <ul>
+                                            <li>Helped repair homes and improve living conditions for low&dash;income families</li>
+                                            <li>Cooperated with group members to achieve our goal in a limited time frame</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    July 2017 & July 2019
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                    <div id="honors">
+                        <h2 class="centered">Honors and Awards</h2>
+                        <table class="resume-table">
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Dean's List</strong> | Drexel University<br>
+                                </td>
+                                <td class="resume-right">
+                                    2020 &ndash; Present
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Eagle Scout</strong> | BSA Troop 63 &ndash; New Providence<br>
+                                </td>
+                                <td class="resume-right">
+                                    Nov 2019
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
