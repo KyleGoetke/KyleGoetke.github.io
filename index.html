@@ -15,14 +15,6 @@
                 history.replaceState("", document.title, window.location.pathname);
             }, 1);
         }
-
-        function changefont(value) {
-            if (value == "one") {
-                document.getElementById("maintable").style.fontFamily = "Jost";
-            } else if (value == "two") {
-                document.getElementById("maintable").style.fontFamily = "Public Sans";
-            }
-        }
     </script>
     <table id="maintable">
         <!-- maintd  -->
@@ -39,10 +31,6 @@
                     <a onclick="removehash()" href="#projects">TECHNICAL PROJECTS</a><br>
                     <a onclick="removehash()" href="#volunteer">VOLUNTEER WORK</a><br>
                     <a onclick="removehash()" href="#honors">HONORS & AWARDS</a><br>
-                    One
-                    <input id="rbone" name="testrb" type="radio" value="clickme" onclick="changefont('one');" />
-                    Two
-                    <input id="rbtwo" name="testrb" type="radio" value="clickme" onclick="changefont('two');" />
                 </nav>
             </td>
             <td id="maintd">
