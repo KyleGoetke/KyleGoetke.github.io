@@ -179,17 +179,26 @@ hr {
 #image-crop {
     width: 150px;
     height: 150px;
-    overflow: hidden;
+    background-color: #96bae0;
     border-radius: 50%;
-    border: 0.5vw solid #96BAE0;
-    margin: 5% auto;
+    z-index: 1;
+    padding: 20px;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 1rem;
 }
 
 #pfp {
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-    float: center;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    left: -12.4px;
+    top: -12.2px;
+    margin: auto;
+    align-self: center;
 }
 
 #about,
