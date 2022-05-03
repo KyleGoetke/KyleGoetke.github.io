@@ -6,16 +6,10 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
 </head>
 
 <body>
-    <script>
-        function removehash() {
-            setTimeout(function() {
-                history.replaceState("", document.title, window.location.pathname);
-            }, 1);
-        }
-    </script>
     <table id="maintable">
         <!-- maintd  -->
         <tr id="about">
@@ -23,14 +17,8 @@
                 <nav class="centered">
                     <h3>Kyle Goetke</h3>
                     <div id="image-crop">
-                        <img id="pfp" src="images/pfp.jpeg" alt="Headshot Photo">
+                        <img id="pfp" src="images/headshot.jpg" alt="Headshot Photo">
                     </div>
-                    <a onclick="removehash()" href="index.html#about">ABOUT</a><br>
-                    <a onclick="removehash()" href="index.html#education">EDUCATION</a><br>
-                    <a onclick="removehash()" href="index.html#experience">EXPERIENCE</a><br>
-                    <a onclick="removehash()" href="index.html#projects">TECHNICAL PROJECTS</a><br>
-                    <a onclick="removehash()" href="index.html#volunteer">VOLUNTEER WORK</a><br>
-                    <a onclick="removehash()" href="index.html#honors">HONORS & AWARDS</a><br>
                 </nav>
             </td>
             <td id="maintd">
@@ -38,6 +26,7 @@
                     <div>
                         <h1>404</h1>
                         <p id="about-me">Whoops! There's nothing here.</p>
+                        <a href="/">Click to visit the main page</a>
                         <hr>
                     </div>
                 </div>
