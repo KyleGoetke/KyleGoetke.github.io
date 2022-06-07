@@ -210,6 +210,25 @@ hr {
     margin-top: 3vh;
 }
 
+#coursework {
+    width: 70vw;
+    top: 0;
+    left: 0;
+}
+
+#coursework tr td {
+    outline: 0;
+    float: left;
+}
+
+#firstcell, #firstcell2 {
+    width: 30vw;
+}
+
+#cell3, #cell4, #cell5, #cell6 {
+    width: 19vw
+}
+
 
 /*
 text       #1c1c1c
