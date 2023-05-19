@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
 <body>
     <script>
         function removehash() {
-            setTimeout(function() {
+            setTimeout(function () {
                 history.replaceState("", document.title, window.location.pathname);
             }, 1);
         }
@@ -37,18 +37,19 @@
             <td id="maintd">
                 <div id="main">
                     <div>
-                        <h1>Hello, I'm Kyle</h1>
+                        <h1>Hello! I'm Kyle</h1>
+                        <!-- <h1>NOT READY TO PUSH</h1> -->
                         <!-- <p id="aftername">How's it going?</p> -->
-                        <p id="about-me">I'm a student, a musician, a computer hardware enthusiast, and a heavy sleeper. I got my first computer when I was twelve years old and fell in love with technology. Since then I've accumulated knowledge and hands–on experience in a range of technical roles. I attend Drexel University, where I'm studying Computing and Security Technology. I enjoy playing the drums, assembling computers, exploring Philadelphia, and rolling d20s.</p>
+                        <p id="about-me">I'm a student, a musician, a computer hardware enthusiast, and a heavy sleeper. I got my first computer when I was twelve years old and fell in love with technology. Since then I've accumulated knowledge and hands-on experience in a range of technical roles. I attend Drexel University, where I'm studying Computing and Security Technology. I enjoy playing the drums, assembling computers, exploring Philadelphia, and rolling d20s.</p>
                         <table id="links">
                             <tr>
                                 <td class="centered">
                                     <div>
-                                        <a href="https://github.com/kylegoetke/" target="_blank" rel="noopener noreferrer"><img id="gh-link" src="images/github-dark.svg" onmouseover="this.src='images/github-blue.svg';" onmouseout="this.src='images/github-dark.svg';" /></a>
+                                        <a href="https://github.com/kylegoetke/" target="_blank" rel="noopener noreferrer"><img id="gh-link" src="images/github-dark.svg" onmouseover="this.src='images/github-blue.svg';" onmouseout="this.src='images/github-dark.svg';"></a>
                                     </div>
                                 </td>
                                 <td class="centered">
-                                    <a href="https://www.linkedin.com/in/kyle-goetke" target="_blank" rel="noopener noreferrer"><img id="linkedin-link" src="images/linkedin-dark.svg" onmouseover="this.src='images/linkedin-blue.svg';" onmouseout="this.src='images/linkedin-dark.svg';" /></a>
+                                    <a href="https://www.linkedin.com/in/kyle-goetke" target="_blank" rel="noopener noreferrer"><img id="linkedin-link" src="images/linkedin-dark.svg" onmouseover="this.src='images/linkedin-blue.svg';" onmouseout="this.src='images/linkedin-dark.svg';"></a>
                                     <br>
                                 </td>
                             </tr>
@@ -62,7 +63,7 @@
                                 <td class="resume-left">
                                     <strong>B.S. Computing and Security Technology</strong><br>
                                     <em>Drexel University</em><br><br>
-                                    <strong>Relevant Coursework:</strong><br>
+                                    <!-- <strong>Relevant Coursework:</strong><br>
                                     <div id="coursework">
                                         <table>
                                             <tr>
@@ -76,11 +77,11 @@
                                                 <td id="cell6">Systems Analysis</td>
                                             </tr>
                                         </table>
-                                    </div>
+                                    </div> -->
                                 </td>
                                 <td class="resume-right">
                                     Expected Graduation: 2025<br>
-                                    Cumulative GPA: 3.90
+                                    Cumulative GPA: 3.91
                                 </td>
                             </tr>
                         </table>
@@ -89,32 +90,35 @@
                     <div id="experience">
                         <h2 class="centered">Experience</h2>
                         <table class="resume-table">
-                            <!-- <tr>
+                            <tr>
                                 <td class="resume-left">
-                                    <strong>Security Engineering Co-op</strong><br>
+                                    <strong>Security Analyst</strong><br>
                                     <em>Susquehanna International Group</em>
                                     <div class="resume-bullets">
                                         <ul>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</li>
-                                            <li>At lectus urna duis convallis convallis tellus. Mattis aliquam faucibus purus in.</li>
-                                            <li>Venenatis a condimentum vitae sapien. Nibh nisl condimentum id venenatis a condimentum.</li>
+                                            <li>Automated phishing email detection, preventing dozens of emails from reaching end users weekly</li>
+                                            <li>Investigated and responded to staged incidents, active threats, and policy violations</li>
+                                            <li>Designed and implemented a PowerShell solution to automate adjustments to SIEM rule attributes, removing this task from analysts' weekly responsibilities</li>
+                                            <li>Carried out regular reviews of potentially malicious emails and analyzed IOCs to prevent attacks</li>
+                                            <li>Onboarded and trained Drexel co-ops with a variety of technical backgrounds</li>
                                         </ul>
                                     </div>
                                 </td>
                                 <td class="resume-right">
-                                    September 2022 &ndash; Present<br>
+                                    September 2022 &ndash; March 2023<br>
                                     <em>Bala Cynwyd, PA</em>
                                 </td>
-                            </tr> -->
+                            </tr>
                             <tr>
                                 <td class="resume-left">
                                     <strong>Associate DevOps Engineer</strong><br>
                                     <em>Health Union</em>
                                     <div class="resume-bullets">
                                         <ul>
-                                            <li>Utilized Amazon Web Services and Docker to construct a CI/CD service and automate IaC deploys</li>
+                                            <li>Utilized Amazon Web Services and Docker to construct a CI/CD service and automate IaC deployment</li>
+                                            <li>Led the development of a comprehensive guide for company-wide use, tailored to non-technical users</li>
                                             <li>Adhered to Agile Scrum development practices to guide development and task completion</li>
-                                            <li>Created a comprehensive reference guide designed for employee use company&dash;wide</li>
+                                            <li>Managed infrastructure for over forty websites using Terraform, resulting in increased reliability and consistency in deployment</li>
                                         </ul>
                                     </div>
                                 </td>
@@ -126,12 +130,12 @@
                             <tr>
                                 <td class="resume-left">
                                     <strong>IT Intern</strong><br>
-                                    <em>Union County Vocational&dash;Technical Schools</em>
+                                    <em>Union County Vocational-Technical Schools</em>
                                     <div class="resume-bullets">
                                         <ul>
                                             <li>Resolved issues across a campus-wide network including hardware repair and software configuration</li>
-                                            <li>Facilitated software delivery through remote and physical systems</li>
-                                            <li>Trained eight new interns to succeed in the following year</li>
+                                            <!-- <li>Facilitated software delivery through remote and physical systems</li> -->
+                                            <li>Trained eight new interns to prepare them for success in the role throughout the following year</li>
                                             <li>Collaborated with faculty to find solutions for issues with productivity and connectivity</li>
                                         </ul>
                                     </div>
@@ -166,7 +170,7 @@
                         <table class="resume-table">
                             <tr>
                                 <td class="resume-left">
-                                    <strong>Platform Panic</strong> | Developer<br>
+                                    <strong>Platform Panic (term project)</strong> | Developer<br>
                                     <div class="resume-bullets">
                                         <ul>
                                             <li>Developed a game inspired by classic platformers using HTML, CSS, and JavaScript</li>
@@ -181,7 +185,7 @@
                             </tr>
                             <tr>
                                 <td class="resume-left">
-                                    <strong>Custom&dash;Built Desktop Computers</strong><br>
+                                    <strong>Custom-Built Desktop Computers</strong><br>
                                     <div class="resume-bullets">
                                         <ul>
                                             <li>Researched and identified compatible hardware components</li>
@@ -205,7 +209,7 @@
                                     <em>Appalachia Service Project</em>
                                     <div>
                                         <ul>
-                                            <li>Helped repair homes and improve living conditions for low&dash;income families</li>
+                                            <li>Helped repair homes and improve living conditions for low-income families</li>
                                             <li>Cooperated with group members to achieve our goal in a limited time frame</li>
                                         </ul>
                                     </div>
