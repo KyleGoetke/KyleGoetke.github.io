@@ -58,6 +58,7 @@ function commander(cmd) {
         case "whoami":
             loopLines(whoami, "index margin", 80);
             break;
+        case "socials":
         case "social":
             loopLines(social, "index margin", 80);
             break;
@@ -85,7 +86,7 @@ function commander(cmd) {
             addLine("<br>", "command", 80 * commands.length + 50);
             break;
         case "email":
-            addLine('<br>Opening mailto:<a href="mailto:kyle.goetke@gmail.com">kyle.goetke@gmail.com</a>...<br><br>', "index", 80);
+            addLine('<br>Opening mailto:<a href="mailto:kyle.goetke@gmail.com"><span class="command">kyle.goetke@gmail.com</span></a>...<br><br>', "index", 80);
             newTab(email);
             break;
         case "clear":
