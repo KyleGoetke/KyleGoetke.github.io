@@ -1,5 +1,6 @@
-var password = "fkcodes";
+// var password = "password";
 var linkedin = "https://www.linkedin.com/in/kyle-goetke/";
+var website = "https://kylegoetke.github.io";
 var github = "https://github.com/kylegoetke/";
 var email = "mailto:kyle.goetke@gmail.com";
 
@@ -16,7 +17,7 @@ whois = [
 
 whoami = [
     "<br>",
-    "The answer to this question cannot be given, it must be sought out.",
+    '<span class="inherit">The answer to this question cannot be given, it must be sought out.</span>',
     "<br>"
 ];
 
@@ -107,11 +108,36 @@ help = [
     '<span class="command">email</span>        Email me',
     '<span class="command">clear</span>        Clear the terminal',
     '<span class="command">banner</span>       Display the welcome message',
+    '<span class="command">mainsite</span>     Return to main website',
     "<br>",
 ];
 
 banner = [
     "<br>Hello! I'm Kyle. Welcome to my interactive web terminal!",
-    "For a list of available commands, type <span class=\"command\">'help'</span>.",
-    "<br>"
+    "For a list of available commands, type <span class=\"command\">'help'</span>."
+];
+
+start_sequence_1 = [
+    "<br>GEKOS - A Seleti-Based Enterprise System",
+    "Fellan Dynamics, Inc.",
+    "<br>CPU          :  BORSON 8073 CPU @ 2800 MHz",
+    "Memory Test  :  12582912KB - OK"
+];
+
+start_sequence_2 = [
+    "<br><br>Detecting ROM x Stringed",
+    "Detecting LNV-Net Extender",
+    "Detecting Network Heartbeat - OK"
+];
+
+start_sequence_3 = [
+    "<br><br>Sectors loaded successfully:"
+];
+
+mainsite = [
+    function newTab(link) {
+        setTimeout(function () {
+            window.open(link, "_blank");
+        }, 500);
+    },
 ];

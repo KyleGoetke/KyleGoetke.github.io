@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Kyle Goetke</title>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <link rel="stylesheet" href="css/kgos.css"/>
+    <script src="js/kgos.js"></script>
+</head>
+
+<body onload="initialize()">
+    <div id="mainwindow">
+
+        <div id="leftmenuwindow">
+            <p class="menutexthover" onclick="aboutfile()">about.txt</p>
+            <p class="menutexthover" onclick="educationfile()">education.txt</p>
+            <p class="menutexthover" onclick="honorsfile()">honors.txt</p>
+            <p class="menutexthover" onclick="resumefile()">resume.pdf</p>
+            <p class="menutext">--------------</p>
+            <p class="menutexthover" onclick="experiencefolder()">experience</p>
+            <p class="hiddenfile" id="sec_analyst" onclick="sec_analyst()"></p>
+            <p class="hiddenfile" id="devops_engr" onclick="devops_engr()"></p>
+            <p class="hiddenfile" id="it_intern" onclick="it_intern()"></p>
+            <p class="hiddenfile" id="asp_volunteer" onclick="asp_volunteer()"></p>
+            <p class="hiddenfile" id="tech_asst" onclick="tech_asst()"></p>
+            <p class="menutexthover" onclick="projectsfolder()">projects</p>
+            <p class="hiddenfile" id="projects1left" onclick="project1()"></p>
+            <p class="hiddenfile" id="projects2left" onclick="project2()"></p>
+        </div>
+
+        <div id="rightmenuwindow">
+            <p class="menutexthover" id="aboutindicator">- FILE -</p>
+            <p class="menutexthover" id="educationindicator">- FILE -</p>
+            <p class="menutexthover" id="honorsindicator">- FILE -</p>
+            <p class="menutexthover" id="resumeindicator">- FILE -</p>
+            <p class="menutext">--------</p>
+            <p class="menutexthover" id="expindicator">-FOLDER-</p>
+            <p class="hiddenfile" id="sec_analystindicator"></p>
+            <p class="hiddenfile" id="devops_engrindicator"></p>
+            <p class="hiddenfile" id="it_internindicator"></p>
+            <p class="hiddenfile" id="asp_volunteerindicator"></p>
+            <p class="hiddenfile" id="tech_asstindicator"></p>
+            <p class="menutexthover" id="projectsindicator">-FOLDER-</p>
+            <p class="hiddenfile" id="projects1right"></p>
+            <p class="hiddenfile" id="projects2right"></p>
+        </div>
+
+        <div id="previewwindow">
+            <p class="previewtext" id="output"></p>
+        </div>
+
+        <div id="consolewindow">
+            <div id="consoletext">
+                <!-- <div id="terminal">
+                    <a id="before"></a>
+                    <div id="command" onclick="$('texter').focus();">
+                        <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
+                        <div id="liner">
+                            <span id="typer"></span><b class="cursor" id="cursor">█</b>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- <div class="text footerText" id="omniTextBox">
+            <p style="margin-top: 12px; margin-left: 3px;">Omni</p>
+        </div>
+        <div class="text footerText" id="pIOSTextBox">
+            <p style="margin-top: 12px; margin-left: 3px;">piOS</p>
+        </div>
+        <div class="text footerText" id="versionTextBox">
+            <p style="margin-top: 12px; margin-left: 3px;">V2.1.01p</p>
+        </div> -->
+    </div>
+</body>
+
+</html>

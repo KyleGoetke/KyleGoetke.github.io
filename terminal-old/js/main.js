@@ -8,8 +8,22 @@ var git = 0;
 let pwd = false;
 var commands = [];
 
+// startup
 setTimeout(function () {
-    loopLines(banner, "", 80);
+    loopLines(start_sequence_1, "", 200);
+    setTimeout(() => {
+        loopLines(start_sequence_2, "", 200);
+    }, "1000");
+    setTimeout(() => {
+        loopLines(start_sequence_3, "", 200);
+    }, "2500");
+    setTimeout(() => {
+        // loopLines(start_sequence_4, "", 200);
+        document.getElementById("terminal.style").innerHTML = "";
+    }, "3000");
+    setTimeout(() => {
+        loopLines(banner, "", 80);
+    }, "4000");
     textarea.focus();
 }, 100);
 
@@ -86,9 +100,10 @@ function commander(cmd) {
             addLine("<br>", "command", 80 * commands.length + 50);
             break;
         case "email":
-            addLine('<br>Opening mailto:<a href="mailto:kyle.goetke@gmail.com"><span class="command">kyle.goetke@gmail.com</span></a>...<br><br>', "index", 80);
+            addLine('<br>Opening mailto:<a href="mailto:kyle.goetke@gmail.com"><span class="command">kyle.goetke@gmail.com</span></a>   ...<br><br>', "index", 80);
             newTab(email);
             break;
+        case "cl":
         case "clear":
             setTimeout(function () {
                 terminal.innerHTML = '<a id="before"></a>';
@@ -107,8 +122,12 @@ function commander(cmd) {
             addLine("<br>Opening GitHub...<br><br>", "index", 0);
             newTab(github);
             break;
+        case "mainsite":
+            addLine('<br>Opening website...<br><br>', "index", 80);
+            newTab(website);
+            break;
         default:
-            addLine('<span class="inherit"><br>Command not found. For a list of commands, type <span class="command">\'help\'</span>.</span><br><br>', "error", 100);
+            addLine('<br><span class="inherit">Command not found. For a list of commands, type <span class="command">\'help\'</span>.</span><br><br>', "error", 100);
             break;
     }
 }
@@ -132,7 +151,7 @@ function addLine(text, style, time) {
     setTimeout(function () {
         var next = document.createElement("p");
         next.innerHTML = t;
-        next.className = style;
+        next.className = "style";
 
         before.parentNode.insertBefore(next, before);
 
@@ -144,4 +163,8 @@ function loopLines(name, style, time) {
     name.forEach(function (item, index) {
         addLine(item, style, index * time);
     });
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }

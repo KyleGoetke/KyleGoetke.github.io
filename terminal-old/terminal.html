@@ -4,7 +4,7 @@
 <head>
     <title>Kyle Goetke</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="css/terminal-styles.css">
     <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,12 +14,11 @@
 <body>
     <div id="terminal">
         <a id="before"></a>
-    </div>
-    <div id="command" onclick="$('texter').focus();">
-        <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
-                   moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
-        <div id="liner">
-            <span id="typer"></span><b class="cursor" id="cursor">█</b>
+        <div id="command" onclick="$('texter').focus();">
+            <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
+            <div id="liner">
+                <span id="typer"></span><b class="cursor" id="cursor">█</b>
+            </div>
         </div>
     </div>
     <script src="js/caret.js"></script>
