@@ -25,7 +25,7 @@ function resumefile() {
     document.getElementById("resumeindicator").innerHTML = "> FILE <";
     document.getElementById("output").innerHTML = "Opening /files/resume.pdf.....";
     setTimeout(function () {
-        window.open("/files/resume.pdf");
+        window.open("resume.pdf");
     }, 1500);
 }
 
