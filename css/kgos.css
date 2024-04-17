@@ -18,6 +18,17 @@ body {
     height: 92%;
 }
 
+#startup {
+    margin: auto;
+    margin-top: 3%;
+    width: 1000px;
+    height: 500px;
+	border: 0px solid black;
+    position: relative;
+    overflow: none;
+    white-space: pre;
+}
+
 #mainwindow {
     margin: auto;
     margin-top: 3%;
