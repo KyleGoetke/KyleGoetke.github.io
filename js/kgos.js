@@ -1,5 +1,5 @@
 function initialize() {
-    document.getElementById("startup").innerHTML = "-------------------------------------------<br>";
+    document.getElementById("startup").innerHTML =  "-------------------------------------------<br>";
     document.getElementById("startup").innerHTML += " kgOS - A Fellan Enterprises Display System<br>";
     document.getElementById("startup").innerHTML += "         ~ Designed in New Jersey ~<br>";
     document.getElementById("startup").innerHTML += "-------------------------------------------<br><br>";
@@ -75,7 +75,7 @@ function aboutfile() {
 function educationfile() {
     resetindicators();
     document.getElementById("educationindicator").innerHTML = "> FILE <";
-    document.getElementById("output").innerHTML = "<b>B.S. Computing and Security Technology</b><br>Drexel University - Philadelphia, PA<br>Cumulative GPA: 3.92<br>Expected Graduation: 2025<br><br>"
+    document.getElementById("output").innerHTML = "<b>B.S. Computing and Security Technology</b><br>Drexel University - Philadelphia, PA<br>Cumulative GPA: 3.90<br>Expected Graduation: June 2025<br><br>"
     document.getElementById("output").innerHTML += "<b>High School Diploma</b><br>Union County Academy for Information Technology - Scotch Plains, NJ<br>Cumulative GPA: 3.89<br>Graduated 2020";
 }
 
@@ -89,15 +89,15 @@ function honorsfile() {
 function resumefile() {
     resetindicators();
     document.getElementById("resumeindicator").innerHTML = "> FILE <";
-    document.getElementById("output").innerHTML = "Opening resume PDF . . .";
+    document.getElementById("output").innerHTML = "Opening resume PDF in new tab . . .";
     setTimeout(function () {
         window.open("resume.pdf");
-    }, 1500);
+    }, 500);
 }
 
 function resetindicators() {
     list = ["about", "education", "honors", "resume"];
-    experience_list = ["sec_analyst", "devops_engr", "it_intern", "asp_volunteer", "tech_asst"];
+    experience_list = ["comp_engr", "sec_analyst", "devops_engr", "it_intern", "asp_volunteer", "tech_asst"];
     list.forEach((element) => {
         newid = element + "indicator";
         document.getElementById(newid).innerHTML = "- FILE -";
@@ -112,7 +112,7 @@ function resetindicators() {
 
 function experiencefolder() {
     resetindicators();
-    experience_list = ["sec_analyst", "devops_engr", "it_intern", "asp_volunteer", "tech_asst"];
+    experience_list = ["comp_engr", "sec_analyst", "devops_engr", "it_intern", "asp_volunteer", "tech_asst"];
     if (document.getElementById("sec_analyst").innerHTML == "") {
         experience_list.forEach((element) => {
             document.getElementById(element).className = "menutexthover";
@@ -135,6 +135,14 @@ function experiencefolder() {
         document.getElementById("expindicator").innerHTML = "-FOLDER-";
     }
 }
+
+function comp_engr() {
+    resetindicators();
+    document.getElementById("comp_engrindicator").innerHTML = "> FILE <";
+    document.getElementById("output").innerHTML = "<b>Computer Engineer</b><br>Naval Sea Systems Command (NAVSEA) - Philadelphia, PA<br>October 2023 - June 2024<br>"
+    document.getElementById("output").innerHTML += "- Provided mission-critical pierside and underway technical services for ships nationwide<br>- Installed and tested shipboard computer hardware to facilitate a generational system upgrade<br>- Contributed to hardware and incident response specifications for use by end users<br>- Conducted market analysis and interfaced with vendors for future acquisition of PCB components<br>";
+}
+
 
 function sec_analyst() {
     resetindicators();
