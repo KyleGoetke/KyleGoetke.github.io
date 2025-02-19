@@ -2,6 +2,7 @@ html {
     color: #1c1c1c;
     font-size: 18px;
     font-family: "Jost", Arial, sans-serif;
+    /* font-family: "Open Sans" Arial, sans-serif; */
     letter-spacing: .04em;
     scroll-behavior: smooth;
     min-height: 100%;
