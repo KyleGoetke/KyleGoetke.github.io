@@ -61,7 +61,8 @@ body {
 }
 
 #leftmenuwindow > .menuTextHover:hover {
-	background-color: #8e2625;
+	/* background-color: #8e2625; */
+    background-color: #4788cf;
 }
 
 #rightmenuwindow {
