@@ -29,12 +29,11 @@
                     <div id="image-crop">
                         <img id="pfp" src="images/headshot.jpg" alt="Headshot Photo">
                     </div>
-                    <a onclick="removehash()" href="#about">ABOUT</a><br>
-                    <a onclick="removehash()" href="#education">EDUCATION</a><br>
-                    <a onclick="removehash()" href="#experience">EXPERIENCE</a><br>
-                    <a onclick="removehash()" href="#projects">TECHNICAL PROJECTS</a><br>
-                    <a onclick="removehash()" href="#volunteer">VOLUNTEER WORK</a><br>
-                    <a onclick="removehash()" href="#honors">HONORS & AWARDS</a><br>
+                    <a id="l-one" onclick="removehash()" data-value="ABOUT" href="#about">ABOUT</a><br>
+                    <a id="l-two" onclick="removehash()" data-value="EDUCATION" href="#education">EDUCATION</a><br>
+                    <a id="l-three" onclick="removehash()" data-value="EXPERIENCE" href="#experience">EXPERIENCE</a><br>
+                    <a id="l-four" onclick="removehash()" data-value="PROJECTS" href="#projects">PROJECTS</a><br>
+                    <a id="l-five" onclick="removehash()" data-value="HONORS" href="#honors">HONORS</a><br>
                 </nav>
             </td>
             <td id="maintd">
@@ -43,7 +42,7 @@
                         <h1>Hello! I'm Kyle</h1>
                         <!-- <h1>NOT READY TO PUSH</h1> -->
                         <!-- <p id="aftername">How's it going?</p> -->
-                        <p id="about-me">I'm a student, a musician, a computer hardware enthusiast, and a heavy sleeper. I got my first computer when I was twelve years old and fell in love with technology. Since then I've accumulated knowledge and hands-on experience in a range of technical roles. I attend Drexel University, where I'm studying Computing and Security Technology. I enjoy playing the drums, assembling computers, exploring Philadelphia, and rolling d20s.</p>
+                        <p id="about-me">I'm a student, a musician, a computer hardware enthusiast, and an avid reader. I got my first computer when I was twelve years old and fell in love with technology. Since then I've accumulated knowledge and hands-on experience in a range of technical roles. I attend Drexel University, where I'm studying Computing and Security Technology and about to graduate. I enjoy playing the drums, assembling computers, exploring Philadelphia, and rolling d20s.</p>
                         <table id="links">
                             <tr>
                                 <td class="centered">
@@ -128,9 +127,9 @@
                                     <div class="resume-bullets">
                                         <ul>
                                             <li>Automated phishing email detection, preventing dozens of emails from reaching end users weekly</li>
-                                            <li>Investigated and responded to staged incidents, active threats, and policy violations</li>
+                                            <li>Investigated and responded to hundreds of alerts, including staged incidents, active threats, and policy violations</li>
                                             <li>Carried out regular reviews of potentially malicious emails and analyzed IOCs to prevent attacks</li>
-                                            <li>Onboarded and trained Drexel co-ops with a variety of technical backgrounds</li>
+                                            <li>Onboarded and trained two fellow Drexel interns with varied technical and professional experience</li>
                                             <li>Designed and implemented a PowerShell solution to automate adjustments to SIEM rule attributes, removing this task from analysts' weekly responsibilities</li>
                                         </ul>
                                     </div>
@@ -147,7 +146,7 @@
                                     <div class="resume-bullets">
                                         <ul>
                                             <li>Constructed a CI/CD service and automated IaC deployment utilizing Amazon Web Services and Docker</li>
-                                            <li>Led the development of a comprehensive guide for company-wide use, tailored to non-technical users</li>
+                                            <li>Led the development of a comprehensive application install guide for company-wide use, designed for both technical and non-technical users</li>
                                             <li>Adhered to Agile Scrum development practices to guide development and task completion</li>
                                             <li>Managed infrastructure for over forty websites using Terraform, resulting in increased reliability and consistency in deployment</li>
                                         </ul>
@@ -166,14 +165,30 @@
                                         <ul>
                                             <li>Resolved issues across a campus-wide network including hardware repair and software configuration</li>
                                             <!-- <li>Facilitated software delivery through remote and physical systems</li> -->
+                                            <li>Trained eight new interns to prepare them for success in the role throughout the following year</li>
                                             <li>Collaborated with faculty to find solutions for issues with productivity and connectivity</li>
-                                            <li>Trained eight new interns to prepare them for success in the role for the following year</li>
                                         </ul>
                                     </div>
                                 </td>
                                 <td class="resume-right">
                                     June 2019 &ndash; June 2021<br>
                                     <em>Scotch Plains, NJ</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="resume-left">
+                                    <strong>Volunteer</strong><br>
+                                    <em>Appalachia Service Project</em>
+                                    <div>
+                                        <ul>
+                                            <li>Helped repair homes and improve living conditions for low-income families</li>
+                                            <li>Cooperated with group members to achieve our goal in a limited time frame</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="resume-right">
+                                    July 2017 & July 2019<br>
+                                    <em>Virginia & West Virginia</em>
                                 </td>
                             </tr>
                             <tr>
@@ -201,7 +216,7 @@
                         <table class="resume-table">
                             <tr>
                                 <td class="resume-left">
-                                    <strong>Platform Panic (Term Project)</strong><br>
+                                    <strong>Platform Panic (term project)</strong> | Developer & Co-Project Manager<br>
                                     <div class="resume-bullets">
                                         <ul>
                                             <li>Developed a game inspired by classic platformers using HTML, CSS, and JavaScript</li>
@@ -226,28 +241,6 @@
                                 </td>
                                 <td class="resume-right">
                                     June 2015 &ndash; Present
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <hr>
-                    <div id="volunteer">
-                        <h2 class="centered">Volunteer Work</h2>
-                        <table class="resume-table">
-                            <tr>
-                                <td class="resume-left">
-                                    <strong>Volunteer</strong><br>
-                                    <em>Appalachia Service Project</em>
-                                    <div>
-                                        <ul>
-                                            <li>Helped repair homes and improve living conditions for low-income families</li>
-                                            <li>Cooperated with group members to achieve our goal in a limited time frame</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td class="resume-right">
-                                    July 2017 & July 2019<br>
-                                    <em>Virginia & West Virginia</em>
                                 </td>
                             </tr>
                         </table>
